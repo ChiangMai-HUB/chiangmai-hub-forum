@@ -5,17 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CHIANGMAI HUB | EXECUTIVE ACCESS</title>
   <style>
-    body { background-color: #1a1a1a; color: #d4af37; font-family: serif; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+    body { background-color: #1a1a1a; color: #d4af37; font-family: serif; display: flex; flex-direction: column; align-items: center; min-height: 100vh; margin: 0; }
+    .ticker-wrapper { width: 100%; margin-bottom: auto; }
+    .content { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; }
     h1 { font-size: 3rem; letter-spacing: 0.5rem; margin-bottom: 10px; }
     p { font-size: 1.2rem; letter-spacing: 0.3rem; opacity: 0.7; margin-bottom: 50px; }
     a { border: 1px solid #d4af37; padding: 15px 40px; text-decoration: none; color: #d4af37; font-weight: bold; letter-spacing: 0.2rem; }
-    footer { position: absolute; bottom: 30px; font-size: 0.7rem; opacity: 0.5; }
+    footer { font-size: 0.7rem; opacity: 0.5; margin-top: auto; padding: 30px; text-align: center; }
+    .disclaimer { font-size: 0.8rem; opacity: 0.4; margin-top: 20px; text-align: center; max-width: 600px; line-height: 1.5; }
   </style>
 </head>
 <body>
-  <h1>CHIANGMAI HUB</h1>
-  <p>THE INNER CIRCLE</p>
-  <a href="https://chiangmai-hub.discourse.group/">REQUEST ACCESS</a>
-  <footer>PALM VILLE ASSET MANAGEMENT</footer>
+  <div class="ticker-wrapper">
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {
+      "symbols": [
+        {
+          "proName": "FOREXCOM:SPXUSD",
+          "title": "S&P 500"
+        },
+        {
+          "proName": "FOREXCOM:NSXUSD",
+          "title": "US 100"
+        },
+        {
+          "proName": "FX_IDC:EURUSD",
+          "title": "EUR/USD"
+        },
+        {
+          "proName": "BITSTAMP:BTCUSD",
+          "title": "Bitcoin"
+        },
+        {
+          "proName": "BITSTAMP:ETHUSD",
+          "title": "Ethereum"
+        }
+      ],
+      "showSymbolLogo": true,
+      "isTransparent": false,
+      "displayMode": "adaptive",
+      "colorTheme": "dark",
+      "locale": "en"
+      }
+      </script>
+    </div>
+  </div>
+  <div class="content">
+    <h1>CHIANGMAI HUB</h1>
+    <p>THE INNER CIRCLE</p>
+    <a href="https://chiangmai-hub.discourse.group/">REQUEST ACCESS</a>
+  </div>
+  <footer>
+    PALM VILLE ASSET MANAGEMENT
+    <div class="disclaimer">This is a test platform. All data displayed is for demonstration purposes only and is not real. Do not use for trading or investment decisions.</div>
+  </footer>
 </body>
 </html>
